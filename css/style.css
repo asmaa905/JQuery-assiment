@@ -94,9 +94,10 @@ a {
   background-color: transparent;
 }
 
-.sidenav a:hover {
+.sidenav a:hover, .sidenav a.active {
   color: rgba(214, 46, 51, 0.4);
 }
+
 .sidenav .close-btn {
   font-size: 36px !important;
  padding-left: 32px !important;

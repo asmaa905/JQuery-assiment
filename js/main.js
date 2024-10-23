@@ -4,6 +4,17 @@ $(document).ready(function(){
   //start global variables
   let eventDate = '25/10/2024';
   // end global variables
+  $('.sidenav a[href^="#"]').click(function(){
+
+    let curentLink = $(this).attr('href')
+    let secOffset  = $(`${curentLink}`).offset().top;
+    // remove other active links
+    $('.sidenav a[href^="#"]').removeClass('active');
+    // add  active to the current active link
+    $(this).addClass('active');
+    $('body , html').animate({scrollTop: secOffset}, 1000);
+
+  });
   $('#openSideBtn').click(function(){
       if($('#sidebar').css('left') == '0px') {
         $('#sidebar').animate({left: `-${$('#sidebar').innerWidth()}`}, 1000);
@@ -23,8 +34,6 @@ $(document).ready(function(){
 
   // slider down section
   $('#sliderDown .section .title').click(function(){
-    // if()
-    // $('.paragraph').addClass('d-none')
     if($(this).siblings('.paragraph').hasClass('d-none')) {
       $('.paragraph').addClass('d-none');
       $(this).siblings('.paragraph').addClass('d-block')
@@ -34,8 +43,6 @@ $(document).ready(function(){
       $(this).siblings('.paragraph').addClass('d-none');
       $(this).siblings('.paragraph').removeClass('d-block')
     }
-
-    // $(this).siblings('.paragraph').slideToggle("slow");
   })
   let limit =  parseInt($('#chars').text());
 
