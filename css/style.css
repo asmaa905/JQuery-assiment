@@ -1,0 +1,251 @@
+/* start global vars */
+/* start global rulez */
+:root {
+  /* --secondary-text-color :rgb(191, 193, 200)  ; */
+  --global-text-color: #212529;
+   /* --main-color : rgb(39,43,48) */
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    direction: ltr;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: var(--global-text-color);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.container {
+  width: 95%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+    text-decoration: none;
+    color:aliceblue
+}
+
+/* end global vars */
+/* start home */
+#home {
+  width: 100%;
+  height: 660px;
+  background-image: url(../images/events-heavenly-header.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  color: white;
+  position: relative;
+}
+.homeOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom:0;
+  right:0;
+  background-color: rgba(214, 46, 51, 0.6);
+}
+#home .content {
+  padding: 16px;
+}
+.headers h1 {
+  font-size: 60px !important;
+  line-height: 72px !important;
+  font-weight: 500 !important;
+}
+/* start  sidebar */
+.openNav {
+  font-size:30px;
+  cursor:pointer
+}
+.sidenav {
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left:-250px;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 20px 8px 20px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: all 0.3s;
+  color: white;
+  background-color: transparent;
+}
+
+.sidenav a:hover {
+  color: rgba(214, 46, 51, 0.4);
+}
+.sidenav .close-btn {
+  font-size: 36px !important;
+ padding-left: 32px !important;
+ width: 25%;
+ cursor:pointer
+
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* end sidebar */
+/* end home */
+/* start singers */
+#sliderDown {
+  margin: 100px auto;
+}
+#sliderDown .content .section h3 {
+  padding: 10px;
+  margin: 0;
+  background-color: rgba(214, 46, 51, 0.6);
+  cursor: pointer;
+  color: white;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 500;
+}
+#sliderDown .content .section .paragraph {
+  color: #000;
+  padding: 10px;
+  background-color: #ccc;
+  /* display: none; */
+}
+/* end singers */
+/* start count */
+#counter {
+  background-image: url(../images/invitation-2508607__340.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  position: relative;
+  /* height: 330px; */
+}
+#counter .overlay {
+ width: 100%;
+ height: 100%;
+ background-color: rgba(214, 46, 51, 0.6);
+ color: #fff;
+ padding:  100px 0px;
+}
+#counter .overlay .section{
+  
+  padding-left: 15px;
+  padding-right: 15px;
+
+ }
+ #counter .overlay .section .cont{
+  border: 1px solid #ccc;
+  color: #fff;
+  padding: 50px;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 500;
+ }
+ #counter .overlay .section .cont p span{
+  padding-right: 5px;
+ }
+/* end count */
+/* start contact us*/
+#contentUs .header {
+  font-size: 35px;
+  line-height: 42px;
+  color: rgb(68, 68, 68)  ;
+  font-weight: 700;
+}
+#contentUs p {
+  font-size: 16px;
+  line-height: 26px;
+  color: rgb(119, 119, 119)  ;
+  font-weight: 400;
+}
+#contentUs .head-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(119, 119, 119)  ;
+  font-weight: 300;
+}
+#contentUs h3.left-head {
+  font-size: 18px;
+  line-height: 22px;
+  color: rgb(68, 68, 68);
+  font-weight: 900;
+}
+#contentUs p.email {
+  color: rgb(214, 46, 51)  ;
+}
+#contentUs p.email i {
+  color: rgb(119, 119, 119)  ;
+}
+#contentUs .contact-form .form-control {
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+.contact-form textarea {
+  height: 200px;
+  resize: vertical;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.btn-form {
+  display: block;
+  background-color: #d62e33;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 0;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+#btnContact:hover {
+  background-color: transparent;
+  color: #000 ;
+  border: 1px solid #000;
+}
+.social .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: 1px solid #777;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+.social i {
+  color: #777; 
+}
+.social .icon:hover {
+  background-color: #d62e33;
+  border: 1px solid #d62e33;
+}
+.social .icon:hover i {
+  color: #fff;
+}
+/* #contentUs .contact-form .form-control {
+  border-radius: 0;
+  margin-bottom: 20px;
+} */
+/* end contact us */

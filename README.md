@@ -1,1 +1,1 @@
-# JQuery-assiment
+# games_app
